@@ -13,7 +13,7 @@
     Napisz fragment kodu, wypisujący która z dwóch dat jest wcześniejsza.
     
 1. Dane są trzy liczby `a, b, c`. Napisać fragment kodu, który wypisze pierwiastki trójmianu kwadratowego:
-    <img src="https://latex.codecogs.com/svg.latex?ax^2+bx+c = 0" title="ax^2+bx+c = 0" />
+    a*x*x + b*x + c = 0.
     
 1. Napisać fragment kodu, który dla podanej przez użytkownika liczby naturalnej poda 
     czy jest ona kwadratem innej liczby naturalnej.
