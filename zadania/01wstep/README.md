@@ -5,6 +5,9 @@
     - 12345 do potęgi 67890
     - napisz wyrażenie zliczające liczbę cyfr wyniku w poprzednich punktach; jak daleko możemy się posunąć?
 
+1. Dla liczb rzeczywistych w Pythonie wyliczyć tzw. *epsilon komputerowe*, czyli w danym typie rzeczywistym najmniejszą 
+    liczbę rzeczywistą większą od zera (a przynajmniej jej przybliżenie).
+
 1. Dane są dwie krotki:
     ```
     data1 = (dzien1, miesiac1, rok1)
