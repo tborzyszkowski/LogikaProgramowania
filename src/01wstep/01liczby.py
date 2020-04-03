@@ -1,19 +1,19 @@
 # operacje arytmetyczne na zwyklych liczbach calkowitych
 # INT
-x = 3
-y = 2
+# x = 3
+# y = 2
 
 # LONG
-# x = 1000L
-# y = 400L
+# x = 1000
+# y = 400
 
 # FLOAT
 # x = 3.333
 # y = 1.234
 
 # COMPLEX
-# x = 3+2j
-# y = 2+1j
+x = 3+2j
+y = 2+1j
 
 print('----------')
 print (type(x))
