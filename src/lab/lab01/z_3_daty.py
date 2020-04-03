@@ -1,4 +1,4 @@
-data1 = (24, 12, 1990)
+data1 = (27, 12, 1990)
 data2 = (25, 12, 1990)
 
 (d1, m1, r1) = data1
@@ -34,4 +34,10 @@ else:
     else:
         result = "równe"
 
+print(result)
+
+dl1 = r1 * 10000 + m1 * 100 + d1
+dl2 = r2 * 10000 + m2 * 100 + d2
+
+result = "Pierwsza" if dl1 < dl2 else ("Druga" if dl1 > dl2 else "Rowne")
 print(result)
