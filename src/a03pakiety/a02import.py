@@ -2,7 +2,8 @@ import a02fibo
 
 print a02fibo.fib(100000)
 print
-print a02fibo.fib2(100000)
+print
+a02fibo.fib_linear(100000)
 
 print "-"*20
 
