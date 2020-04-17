@@ -67,8 +67,8 @@ print(globals()['a'])
 # a01localsglobals.test2(3)
 
 # jakie wyniki otrzymamy wywolujac
-a01localsglobals.test1.__doc__
-a01localsglobals.test2.__doc__
+# a01localsglobals.test1.__doc__
+# a01localsglobals.test2.__doc__
 #
 # Sprawdz
 locals.__doc__
