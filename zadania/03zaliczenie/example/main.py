@@ -1,5 +1,5 @@
 from dane import dane_programu
-from sortowanie import sortuj_dane_programu_po_nazwisku
+from sortowanie import sortuj_dane_programu_po_nazwisku, porownaj_wiersze
 
 def wypisz():
     for item in dane_programu:
@@ -43,4 +43,7 @@ if __name__ == "__main__":
         wypisz_menu()
         wybor = wybierz_opcje()
         if wybor > 0:
-            menu[wybor]["funkcja_realizujaca"]()
+            if wybor == 3:
+                menu[wybor]["funkcja_realizujaca"](porownaj_wiersze)
+            else:
+                menu[wybor]["funkcja_realizujaca"]()
