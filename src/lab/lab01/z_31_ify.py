@@ -6,3 +6,6 @@ if a < b:
 else:
     print("b = " + str(b))
 
+wynik = "a" if a < b else "b"
+
+print(wynik)
