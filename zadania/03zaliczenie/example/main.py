@@ -1,6 +1,7 @@
 from dane import dane_programu
 from sortowanie import sortuj_dane_programu_po_nazwisku, porownaj_wiersze
 from szukaj import wypisz_po_nr_buta
+from statystyka import wypisz_sredni_wiek
 
 
 def wypisz():
@@ -58,6 +59,7 @@ menu = {
     4: {"opis": "Zmień wiek", "funkcja_realizujaca": zmien_wiek},
     5: {"opis": "Sortuj po nazwisku", "funkcja_realizujaca": sortuj_dane_programu_po_nazwisku},
     6: {"opis": "Wypisz po nr buta", "funkcja_realizujaca": wypisz_po_nr_buta},
+    7: {"opis": "Sredni wiek", "funkcja_realizujaca": wypisz_sredni_wiek},
     9: {"opis": "Koniec programu", "funkcja_realizujaca": exit}
 }
 
