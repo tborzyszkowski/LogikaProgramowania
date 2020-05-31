@@ -10,5 +10,6 @@ def szukaj_po_nr_buta():
             wynik.append(wiersz)
     return wynik
 
+
 def wypisz_po_nr_buta():
     print(szukaj_po_nr_buta())

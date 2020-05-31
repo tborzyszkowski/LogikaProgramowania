@@ -1,5 +1,5 @@
 from dane import dane_programu
-from sortowanie import sortuj_dane_programu_po_nazwisku, porownaj_wiersze
+from sortowanie import sortuj_dane_programu_po_nazwisku
 from szukaj import wypisz_po_nr_buta
 from statystyka import wypisz_sredni_wiek
 

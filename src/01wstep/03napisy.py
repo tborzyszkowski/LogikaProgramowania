@@ -27,6 +27,6 @@ b = 'As'
 print("%s i %s" % (a, b))
 print("%d + %d = %d" % (3, 4, 3+4))
 print("Cena = %f" % 50.456789)
-print("Cena = %.2f" % 50.456789)
+print("Cena = %.2f" % 50.454989)
 print("Cena = %+.3f" % 50.456789)
 print('%(language)s has %(#)03d quote types.' % {'language': "Python", "#": 2})
