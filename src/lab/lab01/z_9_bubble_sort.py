@@ -2,8 +2,8 @@ from random import random
 from datetime import datetime
 
 
-N = 1000 * 10
-values = [int(random() * N) for y in range(N)]
+N = 5
+values = [int(random() * N * 100) for y in range(N)]
 print(values)
 
 
@@ -24,8 +24,8 @@ values_benchmark = [int(random() * N) for y in range(N)]
 print(values_benchmark)
 
 t1 = datetime.now()
-valuses_sorted = sorted(values_benchmark)
+values_sorted = sorted(values_benchmark)
 t2 = datetime.now()
 
 print("Sorted time:   ", (t2 - t1).total_seconds() * 1000)
-print(valuses_sorted)
+print(values_sorted)

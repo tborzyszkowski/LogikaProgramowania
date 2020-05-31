@@ -5,8 +5,20 @@ def wypisz():
     for item in dane_programu:
         print(str(item))
 
+
 def usun():
-    pass
+    nazwisko = input('Podaj nazwisko: ')
+    imie = input('Podaj imię: ')
+
+    usuniete = False
+    for wiersz in dane_programu:
+        if wiersz["nazwisko"] == nazwisko and wiersz["imie"] == imie and not usuniete:
+            dane_programu.remove(wiersz)
+            print("Dane: ", wiersz, " USUNIĘTE")
+            usuniete = True
+    if not usuniete:
+        print("Brak danych dla", nazwisko, imie)
+
 
 menu = {
     1: {"opis": "Wypisz dane na ekran", "funkcja_realizujaca": wypisz},
@@ -25,7 +37,7 @@ def wypisz_menu():
 
 
 def wybierz_opcje():
-    wybor = input("Podaj opcje:")
+    wybor = input("Podaj opcje: ")
     wybor_liczba = -1
     try:
         wybor_liczba = int(wybor)

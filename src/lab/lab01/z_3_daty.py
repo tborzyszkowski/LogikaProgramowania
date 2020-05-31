@@ -1,4 +1,4 @@
-data1 = (27, 12, 1990)
+data1 = (25, 12, 1990)
 data2 = (25, 12, 1990)
 
 (d1, m1, r1) = data1
@@ -15,7 +15,7 @@ elif m2 < m1:
 elif d2 > d1:
     print('Data 1')
 elif d2 < d1:
-    print('Data 1')
+    print('Data 2')
 else:
     print('równe')
 
