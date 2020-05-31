@@ -3,7 +3,7 @@ from sortowanie import sortuj_dane_programu_po_nazwisku, porownaj_wiersze
 
 def wypisz():
     for item in dane_programu:
-        print(str(item))
+        print(item["imie"], item["nazwisko"],"\twiek: ", item["wiek"], "\tbut: ", item["but"], "\toczy: ", item["kolor_oczu"])
 
 
 def usun():
@@ -27,7 +27,7 @@ def dodaj_wiersz():
     nowy_wiersz["imie"]= input('Podaj imię: ')
     nowy_wiersz["wiek"] = int(input('Podaj wiek: '))
     nowy_wiersz["but"] = int(input('Podaj but: '))
-    nowy_wiersz["kolor_oczu"] = 1
+    nowy_wiersz["kolor_oczu"] = "niebieskie"
     dane_programu.append(nowy_wiersz)
     print("Dodano nowe dane: ", nowy_wiersz)
 

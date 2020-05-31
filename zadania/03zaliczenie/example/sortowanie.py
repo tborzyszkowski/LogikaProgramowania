@@ -18,5 +18,5 @@ def sortuj_dane_programu_po_nazwisku():
     rozmiar_danych = len(dane_programu)
     for i in range(0, rozmiar_danych):
         for j in range(rozmiar_danych - 1, i, -1):
-            if porownaj_wiersze(dane_programu[j - 1], dane_programu[j]) == -1:
+            if porownaj_wiersze(dane_programu[j - 1], dane_programu[j]) > 0:
                 dane_programu[j - 1], dane_programu[j] = dane_programu[j], dane_programu[j - 1]
