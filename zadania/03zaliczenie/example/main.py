@@ -1,5 +1,7 @@
 from dane import dane_programu
 from sortowanie import sortuj_dane_programu_po_nazwisku, porownaj_wiersze
+from szukaj import wypisz_po_nr_buta
+
 
 def wypisz():
     for item in dane_programu:
@@ -55,6 +57,7 @@ menu = {
     3: {"opis": "Usun dane", "funkcja_realizujaca": usun},
     4: {"opis": "Zmień wiek", "funkcja_realizujaca": zmien_wiek},
     5: {"opis": "Sortuj po nazwisku", "funkcja_realizujaca": sortuj_dane_programu_po_nazwisku},
+    6: {"opis": "Wypisz po nr buta", "funkcja_realizujaca": wypisz_po_nr_buta},
     9: {"opis": "Koniec programu", "funkcja_realizujaca": exit}
 }
 
