@@ -33,7 +33,20 @@ def dodaj_wiersz():
 
 
 def zmien_wiek():
-    pass
+    nazwisko = input('Podaj nazwisko: ')
+    imie = input('Podaj imię: ')
+
+    dane_do_zmiany = None
+    for wiersz in dane_programu:
+        if wiersz["nazwisko"] == nazwisko and wiersz["imie"] == imie and dane_do_zmiany is None:
+            dane_do_zmiany = wiersz
+            print("Znaleziono wiersz: ", dane_do_zmiany)
+            break
+    if dane_do_zmiany is not None:
+        dane_do_zmiany["wiek"] = int(input('Podaj nowy wiek: '))
+        print("Wiek zaktualizowany")
+    else:
+        print("Brak danych do aktualizacji")
 
 
 menu = {
@@ -73,7 +86,4 @@ if __name__ == "__main__":
         wypisz_menu()
         wybor = wybierz_opcje()
         if wybor > 0:
-            if wybor == 5:
-                menu[wybor]["funkcja_realizujaca"](porownaj_wiersze)
-            else:
-                menu[wybor]["funkcja_realizujaca"]()
+            menu[wybor]["funkcja_realizujaca"]()
