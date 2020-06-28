@@ -44,7 +44,7 @@ def fibonacciFast(n):
 
 
 if __name__ == "__main__":
-    n = 1000*1000*10
+    n = 1000*1000*2
     t1 = datetime.now()
     result = fib_linear(n)
     t2 = datetime.now()

@@ -10,5 +10,5 @@ def hanoi(liczbaKrazkow, patykA, patykB, patykX):
 
 
 if __name__ == "__main__":
-    for i in range(2, 30):
+    for i in range(2, 27):
         print("%d : %d : %d" % (i, len(hanoi(i, "A", "B", "X")), 2**i-1))
