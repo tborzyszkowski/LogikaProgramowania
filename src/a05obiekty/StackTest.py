@@ -16,6 +16,23 @@ class StackTestCase(unittest.TestCase):
         result = stack.pop()
         self.assertEqual(20, result)
 
+    def test_push2_pop2_the_same(self):
+        stack = Stack()
+        stack.push(10)
+        stack.push(20)
+        stack.pop()
+        result = stack.pop()
+        self.assertEqual(10, result)
+
+
+    def test_push_pop_size(self):
+        stack = Stack()
+        stack.push(10)
+        stack.push(20)
+        size_after_push = stack.size()
+        stack.pop()
+        self.assertEqual(size_after_push - 1, stack.size())
+
 
 if __name__ == '__main__':
     unittest.main()

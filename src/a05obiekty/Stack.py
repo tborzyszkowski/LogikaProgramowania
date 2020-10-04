@@ -1,10 +1,15 @@
 class Stack:
 
     def __init__(self) -> None:
-        pass
+        self.elements = []
 
     def push(self, element):
-        pass
+        self.elements.append(element)
+
+    def size(self):
+        return len(self.elements)
 
     def pop(self):
-        pass
+        result = self.elements[self.size()-1]
+        self.elements = self.elements[:self.size()-1]
+        return result
