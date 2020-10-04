@@ -19,6 +19,12 @@ class PersonTestCase(unittest.TestCase):
         personEwa = Person("Ewa")
         self.assertEqual(personAdam.species, personEwa.species)
 
+    def test_person_change_age_after_birthday(self):
+        person = Person()
+        person_age = person.age
+        person.birthday()
+        self.assertEqual(person_age+1, person.age)
+
 
 if __name__ == '__main__':
     unittest.main()

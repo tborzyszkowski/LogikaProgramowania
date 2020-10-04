@@ -1,13 +1,14 @@
 import sys
+import os
 
-print sys.path
+print (sys.path)
 
 # import pierwszy
 # import drugi
 
-sys.path.append(r'C:\home\tomek\UG\Zajecia\Python\Wyklad\PythonWyklad\_03_Pakiety\moduly')
+sys.path.append(sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'moduly'))))
 
-print sys.path
+print (sys.path)
 
 import pierwszy
 import drugi

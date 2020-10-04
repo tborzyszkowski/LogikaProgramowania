@@ -1,11 +1,11 @@
 import sys
 
-print "Przed:\n", sys.path
+print ("Przed:\n", sys.path)
 sys.path.append(r'C:\home\tomek\UG\Zajecia\Python\Wyklad\PythonWyklad\_03_Pakiety')
-print "Po:\n", sys.path
+print ("Po:\n", sys.path)
 
 import pakiet
-print dir(pakiet)
+print (dir(pakiet))
 from pakiet import *
 # dir(pakiet)
 # dir(pierwszy)
