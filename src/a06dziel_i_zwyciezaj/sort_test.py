@@ -7,8 +7,15 @@ from random import random
 from datetime import datetime
 from insertion_sort import *
 from merge_sort import *
+from bubble_sort import *
 
-N = 5000
+N = 4000
+
+values = [int(random() * N * 1000) for y in range(N)]
+t1 = datetime.now()
+bubble_sort(values)
+t2 = datetime.now()
+print("bubble sort time:   ", (t2 - t1).total_seconds() * 1000)
 
 values = [int(random() * N * 1000) for y in range(N)]
 t1 = datetime.now()
