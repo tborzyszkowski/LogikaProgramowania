@@ -12,3 +12,6 @@ class Broom(Tool):
 
     def can_sweep(self):
         return True
+
+    def can_fly(self):
+        return True

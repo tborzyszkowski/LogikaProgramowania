@@ -11,6 +11,14 @@ class Tool:
     def can_sweep(self):
         pass
 
+    def can_fly(self):
+        pass
+
     def capability(self):
-        result = {"drill": self.can_drill(), "cut": self.can_cut(), "sweep": self.can_sweep()}
+        result = {
+            "drill": self.can_drill(),
+            "cut": self.can_cut(),
+            "sweep": self.can_sweep(),
+            "fly": self.can_fly()
+        }
         return result
