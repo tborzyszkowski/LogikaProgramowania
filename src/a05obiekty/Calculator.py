@@ -17,4 +17,9 @@ class Calculator:
             self.error_state = 1
 
     def factorial(self):
-        pass
+        def fact(n):
+            if n < 2:
+                return 1
+            else:
+                return fact(n-1) * n
+        self.state = fact(self.state)
