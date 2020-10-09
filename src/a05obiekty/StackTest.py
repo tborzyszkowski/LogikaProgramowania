@@ -33,6 +33,18 @@ class StackTestCase(unittest.TestCase):
         stack.pop()
         self.assertEqual(size_after_push - 1, stack.size())
 
+    def test_push_peek_element(self):
+        stack = Stack()
+        stack.push(10)
+        result = stack.peek()
+        self.assertEqual(10, result)
+
+    def test_push_peek_size(self):
+        stack = Stack()
+        stack.push(10)
+        stack.peek()
+        self.assertEqual(1, stack.size())
+
 
 if __name__ == '__main__':
     unittest.main()

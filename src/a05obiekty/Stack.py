@@ -13,3 +13,6 @@ class Stack:
         result = self.elements[self.size()-1]
         self.elements = self.elements[:self.size()-1]
         return result
+
+    def peek(self):
+        pass
