@@ -16,7 +16,7 @@ class SegmentTestCase(unittest.TestCase):
     def test_distance_in_3d(self):
         segment = Segment(Point(1, 1, 1), Point(2, 2, 2))
         distance = segment.length()
-        self.assertAlmostEqual(1.73, distance, places=2)
+        self.assertAlmostEqual(1.732, distance, places=3)
 
 
 if __name__ == '__main__':

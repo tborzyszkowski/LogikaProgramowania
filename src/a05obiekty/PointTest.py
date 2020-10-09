@@ -16,13 +16,13 @@ class PointTestCase(unittest.TestCase):
         self.assertEqual(10, point.x)
 
     def test_distance_to_self(self):
-        point = Point(10, 10)
+        point = Point(10, 10, 10)
         distance = point.distance(point)
         self.assertEqual(0, distance)
 
     def test_distance_to_other(self):
-        point1 = Point(1, 1)
-        point2 = Point(2, 2)
+        point1 = Point(1, 1, 0)
+        point2 = Point(2, 2, 0)
         distance = point1.distance(point2)
         self.assertEqual(sqrt(2), distance)
 
