@@ -15,3 +15,6 @@ class Calculator:
         else:
             self.state = 0
             self.error_state = 1
+
+    def factorial(self):
+        pass

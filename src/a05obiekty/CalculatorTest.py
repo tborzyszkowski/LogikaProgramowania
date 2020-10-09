@@ -44,5 +44,24 @@ class CalculatorTestCase(unittest.TestCase):
         self.calculator.div(4)
         self.assertEqual(3, self.calculator.state)
 
+    def test_fact_0(self):
+        self.calculator.factorial()
+        self.assertEqual(1, self.calculator.state)
+
+    def test_fact_3(self):
+        self.calculator.state = 3
+        self.calculator.factorial()
+        self.assertEqual(6, self.calculator.state)
+
+    def test_fact_5(self):
+        self.calculator.state = 5
+        self.calculator.factorial()
+        self.assertEqual(120, self.calculator.state)
+
+    def test_fact_15(self):
+        self.calculator.state = 15
+        self.calculator.factorial()
+        self.assertEqual(1307674368000, self.calculator.state)
+
 if __name__ == '__main__':
     unittest.main()
