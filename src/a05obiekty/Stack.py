@@ -15,4 +15,5 @@ class Stack:
         return result
 
     def peek(self):
-        pass
+        result = self.elements[self.size()-1]
+        return result
