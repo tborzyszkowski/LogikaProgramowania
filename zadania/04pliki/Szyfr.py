@@ -28,3 +28,4 @@ class Szyfr:
 
 szyfr = Szyfr("plik.txt", "szyfr.txt")
 szyfr.szyfruj()
+szyfr.odszyfruj()
