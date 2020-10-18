@@ -10,11 +10,11 @@ Znaleźć dane dotyczące jakiegoś procesu ekonomicznego lub społecznego, np. 
 dane dotyczące inflacji lub sprzedaży,  dostępne w formacie `CSV`. Danych powinno 
 być dużo - kilka tysięcy wierszy.
 
-#### Obliczenia statystyczne (35%)
+### Obliczenia statystyczne (35%)
 Używając biblioteki `statistics` policzyć statystyczne charakterystyki danych
 z poprzedniego punktu.
  
-#### Wykresy (35%)
+### Wykresy (35%)
 Używając jednej z bibliotek graficznych, np. `matplotlib` 
 przygotować wykresy charakteryzyjące przetwarzane dane.
 Np.: wykres kwantyli, wykres rozkładu, itp.
