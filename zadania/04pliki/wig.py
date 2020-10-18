@@ -7,10 +7,9 @@ with open('wig_d.csv') as csvfile:
     counter = 0
     volumen_lista = []
     for row in readCSV:
-        print(counter)
-        volumen = float(row[1])
+        volumen = float(row[5])
         volumen_lista.append(volumen)
         counter += 1
-
+print(counter)
 print(statistics.mean(volumen_lista))
-print(statistics.mean([1,2,3,4,5,6,7,8,9,10]))
+print(statistics.mean([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
