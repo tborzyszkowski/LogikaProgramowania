@@ -6,10 +6,15 @@ with open('wig_d.csv') as csvfile:
     next(readCSV)
     counter = 0
     volumen_lista = []
+    diff_lista = []
     for row in readCSV:
         volumen = float(row[5])
         volumen_lista.append(volumen)
+        diff = float(row[2]) - float(row[3])
+        diff_lista.append(diff)
         counter += 1
 print(counter)
-print(statistics.mean(volumen_lista))
-print(statistics.mean([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+print("Srednia: ", statistics.mean(volumen_lista))
+print("Odch.Std:", statistics.stdev(volumen_lista))
+print("Srednia: ", statistics.mean(diff_lista))
+print("Odch.Std:", statistics.stdev(diff_lista))
