@@ -8,14 +8,14 @@ import matplotlib.pyplot as plt
 #
 
 mu, sigma = 0, 1 # mean and standard deviation
-s = np.random.normal(mu, sigma, 10000)
+s = np.random.normal(mu, sigma, 100000)
 # print s
 
 #Verify the mean and the variance
 print("Mean: ", abs(mu - np.mean(s)) < 0.01, np.mean(s))
 print("Var:  ", abs(sigma - np.std(s, ddof=1)) < 0.01, np.std(s, ddof=1))
 
-count, bins, ignored = plt.hist(s, 100)
+count, bins, ignored = plt.hist(s, 200)
 plt.plot(bins, 1/(sigma * np.sqrt(2 * np.pi)) *
                 np.exp( - (bins - mu)**2 / (2 * sigma**2) ),
           linewidth=2, color='r')
