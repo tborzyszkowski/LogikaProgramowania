@@ -6,8 +6,11 @@ from math import sqrt
 class PointTestCase(unittest.TestCase):
 
     def test_set_x_positive(self):
+        # Arrange
         point = Point()
+        # Act
         point.x = 10
+        # Assert
         self.assertEqual(10, point.x)
 
     def test_set_x_negative(self):

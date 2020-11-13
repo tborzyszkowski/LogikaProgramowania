@@ -2,6 +2,7 @@ import unittest
 
 from .Stack import Stack
 
+
 class StackTestCase(unittest.TestCase):
     def test_push_pop_the_same(self):
         stack = Stack()
@@ -23,7 +24,6 @@ class StackTestCase(unittest.TestCase):
         stack.pop()
         result = stack.pop()
         self.assertEqual(10, result)
-
 
     def test_push_pop_size(self):
         stack = Stack()

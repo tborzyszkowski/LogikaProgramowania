@@ -3,16 +3,16 @@ class Tool:
         super().__init__()
 
     def can_drill(self):
-        pass
+        return False
 
     def can_cut(self):
-        pass
+        return False
 
     def can_sweep(self):
-        pass
+        return False
 
     def can_fly(self):
-        pass
+        return False
 
     def capability(self):
         result = {

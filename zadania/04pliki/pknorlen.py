@@ -12,7 +12,7 @@ with open('pknorlen_akcje.csv') as csvfile:
     for row in readCSV:
         kursy_lista.append({"data": row[0], "kurs_max": float(row[5]), "kurs_min": float(row[6])})
         counter += 1
-        if counter > 50:
+        if counter > 500:
             break
 
 print(counter)
