@@ -37,8 +37,17 @@ def wybierz_opcje():
 
 
 if __name__ == "__main__":
+    dane = []
     while True:
         wypisz_menu()
         wybor = wybierz_opcje()
         if wybor in menu:
-            menu[wybor]["funkcja"]()
+            if wybor == 1:
+                dane = wczytaj_dane()
+            elif wybor == 2:
+                liczba_danch = ile_danych(dane)
+                print("Wczytano wierszy:", liczba_danch)
+            elif wybor == 3:
+                wykres_podstawowy(dane)
+            else:
+                menu[wybor]["funkcja"]()

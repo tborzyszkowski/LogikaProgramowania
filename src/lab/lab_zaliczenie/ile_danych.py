@@ -1,2 +1,2 @@
-def ile_danych():
-    print("------ Ile danych")
+def ile_danych(dane):
+    return len(dane)
