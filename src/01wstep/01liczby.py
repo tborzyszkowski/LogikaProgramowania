@@ -16,26 +16,26 @@ x = 3+2j
 y = 2+1j
 
 print('----------')
-print (type(x))
+print(type(x))
 result = x + y
 
 # operacje
-print (x , " + " ,  y , " = " , result)
-print (x - y)
-print (x * y)
-print (x / y)
-print (x // y)  # zaokraglenie w dol dzielenia calkowitego
+print(x, " + ",  y, " = ", result)
+print(x - y)
+print(x * y)
+print(x / y)
+print(x // y)  # zaokraglenie w dol dzielenia calkowitego
 # 3/0.7 3//0.7
 
-print (x % y)   # reszta z dzielenia
-print (-x)
-print (+x)
+print(x % y)   # reszta z dzielenia
+print(-x)
+print(+x)
 print (abs(x))  # wartosc bezwzgledna
 # print (int(x))  # konwersja do int
 # print (long(x))
 # print (float(x))
 c = complex(x, y)
-print (c.conjugate())   # sprzezona do danej zespolonej
-print (divmod(x, y))    # para (x // y, x % y)
-print (pow(x, y))       # x do potegi y
-print (x ** y)          # x do potegi y
+print(c.conjugate())   # sprzezona do danej zespolonej
+print(divmod(x, y))    # para (x // y, x % y)
+print(pow(x, y))       # x do potegi y
+print(x ** y)          # x do potegi y

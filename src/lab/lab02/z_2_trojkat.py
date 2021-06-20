@@ -7,4 +7,4 @@ def trojkat(n):
         print()
 
 
-trojkat(20)
+trojkat(5)

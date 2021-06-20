@@ -3,6 +3,7 @@ print('----------')
 # podobnie jak w C uzywamy \n \t \" ....
 print(r'Ala\t i \n Ola')
 print('\'Ala\' - powiedziala Ola')
+print('Ala\t i \n Ola')
 
 # laczenie napisow
 a = 'Ala\t'+'i '+'Ola '

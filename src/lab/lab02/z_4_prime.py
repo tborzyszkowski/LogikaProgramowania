@@ -11,5 +11,5 @@ def is_prime(num):
 
 
 if __name__ == "__main__":
-    for liczba in range(1000):
+    for liczba in range(1000*1000, 1000*1000+100):
         print(liczba, is_prime(liczba))

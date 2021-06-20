@@ -1,6 +1,6 @@
 # Czy podana liczba N jest kwadratem innej liczby naturalnej
 
-N = (1000 * 1000) ** 2
+N = 1000 ** 2
 isSquare = False
 
 squareCandidate = 1

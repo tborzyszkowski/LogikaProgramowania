@@ -23,14 +23,22 @@ def silnia_reduce(n):
 if __name__ == "__main__":
     n = 100000
     t1 = datetime.now()
-    print(len(str(silnia(n))))
+    # print(len(str(silnia(n))))
     # print(silnia(n))
+    silnia(n)
     t2 = datetime.now()
-    print("Bubble time:   ", (t2 - t1).total_seconds() * 1000)
+    print("silnia time:   ", (t2 - t1).total_seconds() * 1000)
 
     t1 = datetime.now()
-    print(len(str(silnia_reduce(n))))
+    # print(len(str(silnia_reduce(n))))
     # print(silnia_reduce(n))
+    silnia_reduce(n)
     t2 = datetime.now()
-    print("Bubble time:   ", (t2 - t1).total_seconds() * 1000)
+    print("silnia_reduce time:   ", (t2 - t1).total_seconds() * 1000)
 
+    # t1 = datetime.now()
+    # # print(len(str(silnia_rek(n))))
+    # # print(silnia_rek(n))
+    # silnia_rek(n)
+    # t2 = datetime.now()
+    # print("silnia_rek time:   ", (t2 - t1).total_seconds() * 1000)
