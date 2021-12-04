@@ -45,6 +45,15 @@ class StackTestCase(unittest.TestCase):
         stack.peek()
         self.assertEqual(1, stack.size())
 
+    def test_push_1000_pop_500_the_same(self):
+        stack = Stack()
+        for element in range(1000):
+            stack.push(element)
+        for element in range(500):
+            stack.pop()
+        result = stack.pop()
+        self.assertEqual(499, result)
+
 
 if __name__ == '__main__':
     unittest.main()

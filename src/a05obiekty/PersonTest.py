@@ -1,6 +1,7 @@
 import unittest
 from .Person import *
 
+
 class PersonTestCase(unittest.TestCase):
     def test_person_name_correctly_initialized(self):
         person = Person("John")

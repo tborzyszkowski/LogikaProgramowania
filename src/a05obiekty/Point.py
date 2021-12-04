@@ -1,5 +1,6 @@
 from math import sqrt
 
+
 class Point:
     def __init__(self, x_coordinate = 0, y_coordinate = 0, z_coordinate = 0) -> None:
         self.x = x_coordinate
@@ -12,7 +13,7 @@ class Point:
 
     @x.setter
     def x(self, x):
-        self.__x = x if x >= 0 else -x
+        self.__x = x if x>=0 else -x
 
     @property
     def y(self):

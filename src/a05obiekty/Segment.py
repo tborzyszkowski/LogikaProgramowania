@@ -1,7 +1,8 @@
 from .Point import *
 
+
 class Segment:
-    def __init__(self, first_point = Point(0, 0, 0), second_point = Point(1, 1, 1)) -> None:
+    def __init__(self, first_point=Point(0, 0, 0), second_point=Point(1, 1, 1)) -> None:
         self.first_point = first_point
         self.second_point = second_point
 

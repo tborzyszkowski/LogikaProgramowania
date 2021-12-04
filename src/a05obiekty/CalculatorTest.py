@@ -1,6 +1,7 @@
 import unittest
 from .Calculator import *
 
+
 class CalculatorTestCase(unittest.TestCase):
     def setUp(self) -> None:
         self.calculator = Calculator()
@@ -29,10 +30,15 @@ class CalculatorTestCase(unittest.TestCase):
         self.calculator.div(1)
         self.assertEqual(5, self.calculator.state)
 
-    def test_div_0(self):
-        self.calculator.add(5)
+    def test_div_0_state_0(self):
+        self.calculator.state = 1234
         self.calculator.div(0)
-        self.assertNotEqual(0, self.calculator.error_state)
+        self.assertEqual(0, self.calculator.state)
+
+    def test_div_0_error_state(self):
+        self.calculator.state = 1234
+        self.calculator.div(0)
+        self.assertTrue(self.calculator.error_state)
 
     def test_div_6984_by_12(self):
         self.calculator.add(6984)
@@ -62,6 +68,27 @@ class CalculatorTestCase(unittest.TestCase):
         self.calculator.state = 15
         self.calculator.factorial()
         self.assertEqual(1307674368000, self.calculator.state)
+
+    def test_sqrt_0(self):
+        self.calculator.state = 0
+        self.calculator.sqrt()
+        self.assertEqual(0, self.calculator.state)
+
+    def test_sqrt_2(self):
+        self.calculator.state = 2
+        self.calculator.sqrt()
+        self.assertEqual(1, self.calculator.state)
+
+    def test_sqrt_13(self):
+        self.calculator.state = 13
+        self.calculator.sqrt()
+        self.assertEqual(3, self.calculator.state)
+
+    def test_sqrt_395(self):
+        self.calculator.state = 395
+        self.calculator.sqrt()
+        self.assertEqual(19, self.calculator.state)
+
 
 if __name__ == '__main__':
     unittest.main()
