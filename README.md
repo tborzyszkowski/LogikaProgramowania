@@ -11,3 +11,5 @@ Zajęcia z podstaw programowania
 * [Python Tips](http://book.pythontips.com/en/latest/)
 * [Learn Python The Hard Way](https://learnpythonthehardway.org/book/)
 
+## Algorithms
+* [Visualizations for data structures and algorithms](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
