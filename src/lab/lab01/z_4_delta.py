@@ -1,7 +1,7 @@
 from math import sqrt
 a = 1
-b = 5
-c = 6
+b = 7
+c = 12
 
 if a == 0:
     if b == 0:
