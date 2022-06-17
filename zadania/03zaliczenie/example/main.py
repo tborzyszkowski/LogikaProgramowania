@@ -1,4 +1,4 @@
-from dane import dane_programu
+from dane import dane_programu, kol_imie
 from sortowanie import sortuj_dane_programu_po_nazwisku
 from szukaj import wypisz_po_nr_buta
 from statystyka import wypisz_sredni_wiek
@@ -6,7 +6,7 @@ from statystyka import wypisz_sredni_wiek
 
 def wypisz():
     for item in dane_programu:
-        print(item["imie"], item["nazwisko"],"\twiek: ", item["wiek"], "\tbut: ", item["but"], "\toczy: ", item["kolor_oczu"])
+        print(item[kol_imie], item["nazwisko"],"\twiek: ", item["wiek"], "\tbut: ", item["but"], "\toczy: ", item["kolor_oczu"])
 
 
 def usun():
@@ -27,7 +27,7 @@ def usun():
 def dodaj_wiersz():
     nowy_wiersz = {}
     nowy_wiersz["nazwisko"] = input('Podaj nazwisko: ')
-    nowy_wiersz["imie"]= input('Podaj imię: ')
+    nowy_wiersz[kol_imie]= input('Podaj imię: ')
     nowy_wiersz["wiek"] = int(input('Podaj wiek: '))
     nowy_wiersz["but"] = int(input('Podaj but: '))
     nowy_wiersz["kolor_oczu"] = "niebieskie"
@@ -41,7 +41,7 @@ def zmien_wiek():
 
     dane_do_zmiany = None
     for wiersz in dane_programu:
-        if wiersz["nazwisko"] == nazwisko and wiersz["imie"] == imie and dane_do_zmiany is None:
+        if wiersz["nazwisko"] == nazwisko and wiersz[kol_imie] == imie and dane_do_zmiany is None:
             dane_do_zmiany = wiersz
             print("Znaleziono wiersz: ", dane_do_zmiany)
             break
