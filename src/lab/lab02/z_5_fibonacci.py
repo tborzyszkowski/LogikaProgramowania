@@ -46,12 +46,13 @@ def fibonacciFast(n):
 if __name__ == "__main__":
     n = 1000*1000
     t1 = datetime.now()
-    result = fib_linear(n)
+    #result = fib_linear(n)
     t2 = datetime.now()
     # print(result)
     print("fib_linear time:   ", (t2 - t1).total_seconds() * 1000)
     t1 = datetime.now()
     result = fibonacciFast(n)
+    print(len(str(result)))
     t2 = datetime.now()
     # print(result)
     print("fibonacciFast time:   ", (t2 - t1).total_seconds() * 1000)
