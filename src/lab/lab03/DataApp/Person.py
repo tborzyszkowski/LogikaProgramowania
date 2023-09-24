@@ -1,4 +1,5 @@
 from datetime import date
+from datetime import timedelta
 
 class Person:
     colors = ['red', 'yellow', 'blue', '#776655']
@@ -8,12 +9,12 @@ class Person:
     def __init__(self,
                  name="Jan",
                  surname="Kowalski",
-                 date_of_birth=date.today(),
+                 #date_of_birth=date.today(),
                  foot_size=33,
                  eyes_color="red"):
         self.name = name
         self.surname = surname
-        self.date_of_birth = date_of_birth
+        #self.date_of_birth = date_of_birth
         self.foot_size = foot_size
         self.eyes_color = eyes_color
 
@@ -26,13 +27,14 @@ class Person:
         if len(name) > 1:
             self.__name = name
 
-    def date_of_birth(self):
-        return self.__name
-
-    @date_of_birth.setter
-    def date_of_birth(self, date_of_birth):
-        if self.__class__.min_year <= self.__class__.how_many_years(date_of_birth) <= self.__class__.max_years:
-            self.__date_of_birth = date_of_birth
+    # @property
+    # def date_of_birth(self):
+    #     return self.__date_of_birth
+    #
+    # @date_of_birth.setter
+    # def date_of_birth(self, date_of_birth):
+    #     if self.__class__.min_year <= self.__class__.how_many_years(date_of_birth) <= self.__class__.max_years:
+    #         self.__date_of_birth = date_of_birth
 
     @property
     def foot_size(self):
@@ -55,7 +57,7 @@ class Person:
     def age(self):
         return self.__class__.how_many_years(self.date_of_birth())
 
-    @classmethod
+    @staticmethod
     def how_many_years(date_of_birth):
         today = date.today()
         one_or_zero = \
@@ -67,7 +69,7 @@ class Person:
     def __str__(self):
         return "{ first_name: " + self.name + \
             ", second_name: " + self.surname + \
-            ", DoB: " + str(self.date_of_birth) + \
+            #", DoB: " + str(self.date_of_birth) + \
             ", foot: " + str(self.foot_size) + \
             ", eyes: " + self.eyes_color + " }"
 
@@ -78,4 +80,5 @@ class Person:
 if __name__ == '__main__':
     person = Person()
     print(person)
-    person.eyes_color = "blue"
+    # person.eyes_color = "blue"
+    # person.date_of_birth = date.today() - 19 * timedelta(days=365)
