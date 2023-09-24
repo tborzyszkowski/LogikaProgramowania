@@ -1,7 +1,11 @@
 from datetime import date
 
 
+
+
 class Person:
+    colors = ['red', 'yellow', 'blue', '#776655']
+
     def __init__(self,
                  name="Jan",
                  surname="Kowalski",
@@ -22,6 +26,24 @@ class Person:
     def name(self, name):
         if len(name) > 1:
             self.__name = name
+
+    @property
+    def foot_size(self):
+        return self.__foot_size
+
+    @foot_size.setter
+    def foot_size(self, foot_size):
+        if 24 <= foot_size <= 42: #(24<= foot_size) and (foot_size <= 42)
+            self.__foot_size = foot_size
+
+    @property
+    def eyes_color(self):
+        return self.__eyes_color
+
+    @eyes_color.setter
+    def eyes_color(self, eyes_color):
+        if eyes_color in self.__class__.colors:
+            self.__eyes_color = eyes_color
 
     def age(self):
         today = date.today()
@@ -44,3 +66,4 @@ class Person:
 if __name__ == '__main__':
     person = Person()
     print(person)
+    person.eyes_color = "blue"
