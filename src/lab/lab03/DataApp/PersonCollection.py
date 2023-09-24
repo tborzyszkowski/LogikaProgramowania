@@ -23,7 +23,7 @@ class PersonCollection:
                        person["surname"],
                        person["foot_size"],
                        person["eyes_color"])
-            )\
+            )
     def add_persons(self):
         read_repo = ReadRepository("persons.csv")
         persons_from_csv = read_repo.read_person_repository()
