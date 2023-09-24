@@ -27,6 +27,14 @@ class Person:
         if len(name) > 1:
             self.__name = name
 
+    def date_of_birth(self):
+        return self.__name
+
+    @date_of_birth.setter
+    def date_of_birth(self, date_of_birth):
+        if :
+            self.__date_of_birth = date_of_birth
+
     @property
     def foot_size(self):
         return self.__foot_size
@@ -46,11 +54,16 @@ class Person:
             self.__eyes_color = eyes_color
 
     def age(self):
+        return self.__class__.how_many_years(self.date_of_birth())
+
+    @classmethod
+    def how_many_years(date_of_birth):
         today = date.today()
         one_or_zero = \
-            ((today.month, today.day) < (self.date_of_birth.month, self.date_of_birth.day))
-        year_delta = today.year - self.date_of_birth.year
+            ((today.month, today.day) < (date_of_birth.month, date_of_birth.day))
+        year_delta = today.year - date_of_birth.year
         return year_delta - one_or_zero
+
 
     def __str__(self):
         return "{ first_name: " + self.name + \
