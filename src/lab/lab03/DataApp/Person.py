@@ -1,10 +1,9 @@
 from datetime import date
 
-
-
-
 class Person:
     colors = ['red', 'yellow', 'blue', '#776655']
+    min_year = 18
+    max_years = 99
 
     def __init__(self,
                  name="Jan",
@@ -32,7 +31,7 @@ class Person:
 
     @date_of_birth.setter
     def date_of_birth(self, date_of_birth):
-        if :
+        if self.__class__.min_year <= self.__class__.how_many_years(date_of_birth) <= self.__class__.max_years:
             self.__date_of_birth = date_of_birth
 
     @property
