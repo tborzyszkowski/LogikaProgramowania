@@ -5,17 +5,18 @@ class ReadRepository:
     def __init__(self, path):
         if self.__class__.valid_path(path):
             self.path = path
-        raise AttributeError
+        else:
+            raise AttributeError
 
     @staticmethod
     def valid_path(path):
         result = True
         if path is None:
             result = False
-        try:
-            open(path)
-        except FileNotFoundError:
-            result = False
+        # try:
+        #     open(path)
+        # except FileNotFoundError:
+        #     result = False
         return result
 
     def read_repository(self):
