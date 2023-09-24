@@ -16,6 +16,7 @@ class ReadRepository:
             open(path)
         except FileNotFoundError:
             result = False
+        return result
 
     def read_repository(self):
         result = []

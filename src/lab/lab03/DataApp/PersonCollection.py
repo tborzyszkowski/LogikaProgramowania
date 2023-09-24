@@ -23,7 +23,7 @@ class PersonCollection:
                        person["surname"],
                        person["foot_size"],
                        person["eyes_color"])
-            )
+            )\
     def add_persons(self):
         read_repo = ReadRepository("persons.csv")
         persons_from_csv = read_repo.read_person_repository()
@@ -36,10 +36,11 @@ class PersonCollection:
 
 if __name__ == '__main__':
     person_collection = PersonCollection()
-    fst = Person("Anna", "Kos", date.today(), 12, "pink")
-    person_collection.add_person(fst)
-    person_collection.add_person(Person())
-    print(str(person_collection))
+    person_collection.add_persons()
+    # fst = Person("Anna", "Kos", date.today(), 12, "pink")
+    # person_collection.add_person(fst)
+    # person_collection.add_person(Person())
+    # print(str(person_collection))
 
-    person_collection.delete(fst)
+    # person_collection.delete(fst)
     print(str(person_collection))

@@ -69,7 +69,6 @@ class Person:
     def __str__(self):
         return "{ first_name: " + self.name + \
             ", second_name: " + self.surname + \
-            #", DoB: " + str(self.date_of_birth) + \
             ", foot: " + str(self.foot_size) + \
             ", eyes: " + self.eyes_color + " }"
 
