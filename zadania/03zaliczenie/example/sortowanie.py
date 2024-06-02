@@ -1,11 +1,11 @@
 from dane import *
 
-alfabet = ['a', 'ą', 'b', 'c', 'ć']
-
+# alfabet = ['a', 'ą', 'b', 'c', 'ć']
+alfabet = ['a', 'ą', 'b', 'c', 'ć', 'd', 'e', 'ę', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'ł', 'm', 'n', 'o', 'ó', 'p', 'q', 'r', 's', 'ś', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'ź', 'ż', 'z']
 
 def porownaj(str1, str2):
-    val1 = list(map(lambda x: alfabet.index(x), str1))
-    val2 = list(map(lambda x: alfabet.index(x), str2))
+    val1 = list(map(lambda x: alfabet.index(x), str1.lower()))
+    val2 = list(map(lambda x: alfabet.index(x), str2.lower()))
     if val1 > val2:
         return 1
     elif val1 < val2:
