@@ -9,8 +9,9 @@ if a != 0:
     # ...
     delta = b * b - 4 * a * c
     if delta > 0:
-        # ...
+        print("x1 = ..." )
+        print("x2 = ..." )
     else:
-        # ...
+        print("..." )
 else:
-    # a == 0
+    print("...." )
